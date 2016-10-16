@@ -80,12 +80,6 @@ workspace 'CppServerBootstrap'
         }
         remove_system_dependent_files()
 
-        filter 'system:windows'
-            removefiles
-            {
-                'src/base/strings/string16.cc',
-            }
-
     project 'UnitTest'
         location    'build'
         kind        'ConsoleApp'
@@ -113,7 +107,11 @@ workspace 'CppServerBootstrap'
         links
         {
             'Base',
-            'glog',
-            'pthread'
         }
+		
+		filter 'system:windows'
+			links{'libglog'}
+		
+		filter 'system:linux'
+			links{'glog', 'pthread'}
 
