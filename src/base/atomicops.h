@@ -25,8 +25,7 @@
 // to use these.
 //
 
-#ifndef BASE_ATOMICOPS_H_
-#define BASE_ATOMICOPS_H_
+#pragma once
 
 #include <stdint.h>
 
@@ -158,4 +157,3 @@ Atomic64 Release_Load(volatile const Atomic64* ptr);
 #include "base/atomicops_internals_atomicword_compat.h"
 #endif
 
-#endif  // BASE_ATOMICOPS_H_

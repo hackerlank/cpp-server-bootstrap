@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_VERSION_H_
-#define BASE_VERSION_H_
+#pragma once
 
 #include <stdint.h>
 
@@ -73,4 +72,3 @@ BASE_EXPORT std::ostream& operator<<(std::ostream& stream, const Version& v);
 // namespace
 using base::Version;
 
-#endif  // BASE_VERSION_H_

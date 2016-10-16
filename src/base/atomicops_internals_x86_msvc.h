@@ -4,8 +4,7 @@
 
 // This file is an internal atomic implementation, use base/atomicops.h instead.
 
-#ifndef BASE_ATOMICOPS_INTERNALS_X86_MSVC_H_
-#define BASE_ATOMICOPS_INTERNALS_X86_MSVC_H_
+#pragma once
 
 #include <windows.h>
 
@@ -193,4 +192,3 @@ inline Atomic64 Release_CompareAndSwap(volatile Atomic64* ptr,
 }  // namespace subtle
 }  // namespace base
 
-#endif  // BASE_ATOMICOPS_INTERNALS_X86_MSVC_H_

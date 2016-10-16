@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_PATTERN_H_
-#define BASE_STRINGS_PATTERN_H_
+#pragma once
 
 #include "base/base_export.h"
 #include "base/strings/string_piece.h"
@@ -23,4 +22,3 @@ BASE_EXPORT bool MatchPattern(const StringPiece16& string,
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_PATTERN_H_

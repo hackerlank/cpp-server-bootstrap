@@ -19,8 +19,7 @@
 // generates slightly smaller code.  For more discussion, Googlers can see
 // the thread go/stringpiecebyvalue on c-users.
 
-#ifndef BASE_STRINGS_STRING_PIECE_H_
-#define BASE_STRINGS_STRING_PIECE_H_
+#pragma once
 
 #include <stddef.h>
 
@@ -447,4 +446,3 @@ struct StringPiece16Hash {
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_STRING_PIECE_H_

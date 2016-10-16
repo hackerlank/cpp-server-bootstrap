@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_NUMERICS_SAFE_CONVERSIONS_IMPL_H_
-#define BASE_NUMERICS_SAFE_CONVERSIONS_IMPL_H_
+#pragma once
 
 #include <limits.h>
 #include <stdint.h>
@@ -259,4 +258,3 @@ inline constexpr RangeConstraint DstRangeRelationToSrcRange(Src value) {
 }  // namespace internal
 }  // namespace base
 
-#endif  // BASE_NUMERICS_SAFE_CONVERSIONS_IMPL_H_

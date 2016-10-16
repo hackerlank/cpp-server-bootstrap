@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef THIRD_PARTY_DMG_FP_H_
-#define THIRD_PARTY_DMG_FP_H_
+#pragma once
 
 namespace dmg_fp {
 
@@ -27,4 +26,3 @@ char* g_fmt(char* b, double x);
 
 }  // namespace dmg_fp
 
-#endif  // THIRD_PARTY_DMG_FP_H_

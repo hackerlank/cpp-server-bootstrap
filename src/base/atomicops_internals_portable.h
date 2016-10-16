@@ -29,8 +29,7 @@
 //    needs to increment twice (which the compiler should be able to detect and
 //    optimize).
 
-#ifndef BASE_ATOMICOPS_INTERNALS_PORTABLE_H_
-#define BASE_ATOMICOPS_INTERNALS_PORTABLE_H_
+#pragma once
 
 #include <atomic>
 
@@ -226,4 +225,3 @@ inline Atomic64 Release_Load(volatile const Atomic64* ptr) {
 }  // namespace subtle
 }  // namespace base
 
-#endif  // BASE_ATOMICOPS_INTERNALS_PORTABLE_H_

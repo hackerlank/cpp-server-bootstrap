@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_TEST_SCOPED_LOCALE_H_
-#define BASE_TEST_SCOPED_LOCALE_H_
+#pragma once
 
 #include <string>
 
@@ -26,4 +25,3 @@ class ScopedLocale {
 
 }  // namespace base
 
-#endif  // BASE_TEST_SCOPED_LOCALE_H_

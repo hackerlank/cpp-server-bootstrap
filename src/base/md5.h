@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_MD5_H_
-#define BASE_MD5_H_
+#pragma once
 
 #include <stddef.h>
 #include <stdint.h>
@@ -75,4 +74,3 @@ BASE_EXPORT std::string MD5String(const StringPiece& str);
 
 }  // namespace base
 
-#endif  // BASE_MD5_H_

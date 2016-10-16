@@ -4,8 +4,7 @@
 
 // This file is an internal atomic implementation, use base/atomicops.h instead.
 
-#ifndef BASE_ATOMICOPS_INTERNALS_ATOMICWORD_COMPAT_H_
-#define BASE_ATOMICOPS_INTERNALS_ATOMICWORD_COMPAT_H_
+#pragma once
 
 #include <stdint.h>
 
@@ -101,4 +100,3 @@ inline AtomicWord Release_Load(volatile const AtomicWord* ptr) {
 
 #endif  // !defined(ARCH_CPU_64_BITS)
 
-#endif  // BASE_ATOMICOPS_INTERNALS_ATOMICWORD_COMPAT_H_

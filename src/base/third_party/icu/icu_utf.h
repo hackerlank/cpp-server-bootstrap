@@ -14,8 +14,7 @@
 *   created by: Markus W. Scherer
 */
 
-#ifndef BASE_THIRD_PARTY_ICU_ICU_UTF_H_
-#define BASE_THIRD_PARTY_ICU_ICU_UTF_H_
+#pragma once
 
 #include <stdint.h>
 
@@ -397,4 +396,3 @@ UChar32 utf8_nextCharSafeBody(const uint8_t* s,
 
 }  // namesapce base_icu
 
-#endif  // BASE_THIRD_PARTY_ICU_ICU_UTF_H_

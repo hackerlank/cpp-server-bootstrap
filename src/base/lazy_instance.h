@@ -32,8 +32,7 @@
 //     ptr->DoDoDo();  // MyClass::DoDoDo
 //   }
 
-#ifndef BASE_LAZY_INSTANCE_H_
-#define BASE_LAZY_INSTANCE_H_
+#pragma once
 
 #include <new>  // For placement new.
 #include <glog/logging.h>
@@ -201,4 +200,3 @@ class LazyInstance {
 
 }  // namespace base
 
-#endif  // BASE_LAZY_INSTANCE_H_

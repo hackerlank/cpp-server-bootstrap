@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_HASH_H_
-#define BASE_HASH_H_
+#pragma once
 
 #include <stddef.h>
 #include <stdint.h>
@@ -115,4 +114,3 @@ struct IntPairHash<std::pair<Type1, Type2>> {
 
 }  // namespace base
 
-#endif  // BASE_HASH_H_

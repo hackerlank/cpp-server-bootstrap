@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_COMPILER_SPECIFIC_H_
-#define BASE_COMPILER_SPECIFIC_H_
+#pragma once
 
 #include "build/build_config.h"
 
@@ -200,4 +199,3 @@
 #define HAS_FEATURE(FEATURE) 0
 #endif
 
-#endif  // BASE_COMPILER_SPECIFIC_H_

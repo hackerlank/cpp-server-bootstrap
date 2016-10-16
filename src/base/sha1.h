@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_SHA1_H_
-#define BASE_SHA1_H_
+#pragma once
 
 #include <stddef.h>
 
@@ -28,4 +27,3 @@ BASE_EXPORT void SHA1HashBytes(const unsigned char* data, size_t len,
 
 }  // namespace base
 
-#endif  // BASE_SHA1_H_

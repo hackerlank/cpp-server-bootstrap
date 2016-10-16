@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_NUMERICS_SAFE_MATH_H_
-#define BASE_NUMERICS_SAFE_MATH_H_
+#pragma once
 
 #include <stddef.h>
 #include <type_traits>
@@ -297,4 +296,3 @@ using internal::CheckedNumeric;
 
 }  // namespace base
 
-#endif  // BASE_NUMERICS_SAFE_MATH_H_

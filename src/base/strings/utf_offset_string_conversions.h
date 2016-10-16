@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_UTF_OFFSET_STRING_CONVERSIONS_H_
-#define BASE_STRINGS_UTF_OFFSET_STRING_CONVERSIONS_H_
+#pragma once
 
 #include <stddef.h>
 
@@ -125,4 +124,3 @@ struct LimitOffset {
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_UTF_OFFSET_STRING_CONVERSIONS_H_

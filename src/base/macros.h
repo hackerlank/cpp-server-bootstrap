@@ -7,8 +7,7 @@
 // that are closely related to things that are commonly used that belong in this
 // file.)
 
-#ifndef BASE_MACROS_H_
-#define BASE_MACROS_H_
+#pragma once
 
 #include <stddef.h>  // For size_t.
 
@@ -88,4 +87,3 @@ enum LinkerInitialized { LINKER_INITIALIZED };
 
 }  // base
 
-#endif  // BASE_MACROS_H_

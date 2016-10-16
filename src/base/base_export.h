@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_BASE_EXPORT_H_
-#define BASE_BASE_EXPORT_H_
+#pragma once
 
 #if defined(COMPONENT_BUILD)
 #if defined(WIN32)
@@ -26,4 +25,3 @@
 #define BASE_EXPORT
 #endif
 
-#endif  // BASE_BASE_EXPORT_H_

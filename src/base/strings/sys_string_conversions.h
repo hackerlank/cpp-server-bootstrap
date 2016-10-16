@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_SYS_STRING_CONVERSIONS_H_
-#define BASE_STRINGS_SYS_STRING_CONVERSIONS_H_
+#pragma once
 
 // Provides system-dependent string type conversions for cases where it's
 // necessary to not use ICU. Generally, you should not need this in Chrome,
@@ -82,4 +81,3 @@ BASE_EXPORT string16 SysNSStringToUTF16(NSString* ref);
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_SYS_STRING_CONVERSIONS_H_

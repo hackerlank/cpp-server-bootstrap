@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_NULLABLE_STRING16_H_
-#define BASE_STRINGS_NULLABLE_STRING16_H_
+#pragma once
 
 #include <iosfwd>
 #include "base/base_export.h"
@@ -42,4 +41,3 @@ BASE_EXPORT std::ostream& operator<<(std::ostream& out,
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_NULLABLE_STRING16_H_

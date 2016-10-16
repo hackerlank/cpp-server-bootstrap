@@ -4,8 +4,7 @@
 
 // This file defines some bit utilities.
 
-#ifndef BASE_BITS_H_
-#define BASE_BITS_H_
+#pragma once
 
 #include <stddef.h>
 #include <stdint.h>
@@ -51,4 +50,3 @@ inline size_t Align(size_t size, size_t alignment) {
 }  // namespace bits
 }  // namespace base
 
-#endif  // BASE_BITS_H_

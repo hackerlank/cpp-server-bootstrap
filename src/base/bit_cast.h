@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_BIT_CAST_H_
-#define BASE_BIT_CAST_H_
+#pragma once
 
 #include <string.h>
 #include <type_traits>
@@ -97,4 +96,3 @@ inline Dest bit_cast(const Source& source) {
   return dest;
 }
 
-#endif  // BASE_BIT_CAST_H_

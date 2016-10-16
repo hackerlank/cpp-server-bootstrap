@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_ATOMIC_SEQUENCE_NUM_H_
-#define BASE_ATOMIC_SEQUENCE_NUM_H_
+#pragma once
 
 #include "base/atomicops.h"
 #include "base/macros.h"
@@ -57,4 +56,3 @@ class AtomicSequenceNumber {
 
 }  // namespace base
 
-#endif  // BASE_ATOMIC_SEQUENCE_NUM_H_

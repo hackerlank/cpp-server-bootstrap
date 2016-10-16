@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_STRING16_H_
-#define BASE_STRINGS_STRING16_H_
+#pragma once
 
 // WHAT:
 // A version of std::basic_string that provides 2-byte characters even when
@@ -201,4 +200,3 @@ struct hash<base::string16> {
 
 #endif  // WCHAR_T_IS_UTF32
 
-#endif  // BASE_STRINGS_STRING16_H_

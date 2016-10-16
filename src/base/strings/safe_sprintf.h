@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_SAFE_SPRINTF_H_
-#define BASE_STRINGS_SAFE_SPRINTF_H_
+#pragma once
 
 #include "build/build_config.h"
 
@@ -243,4 +242,3 @@ inline ssize_t SafeSPrintf(char (&buf)[N], const char* fmt) {
 }  // namespace strings
 }  // namespace base
 
-#endif  // BASE_STRINGS_SAFE_SPRINTF_H_

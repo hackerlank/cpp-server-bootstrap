@@ -5,8 +5,7 @@
 // This is a low level implementation of atomic semantics for reference
 // counting.  Please use base/memory/ref_counted.h directly instead.
 
-#ifndef BASE_ATOMIC_REF_COUNT_H_
-#define BASE_ATOMIC_REF_COUNT_H_
+#pragma once
 
 #include "base/atomicops.h"
 
@@ -63,4 +62,3 @@ inline bool AtomicRefCountIsZero(volatile AtomicRefCount *ptr) {
 
 }  // namespace base
 
-#endif  // BASE_ATOMIC_REF_COUNT_H_

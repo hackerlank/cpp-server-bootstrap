@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_STRINGPRINTF_H_
-#define BASE_STRINGS_STRINGPRINTF_H_
+#pragma once
 
 #include <stdarg.h>   // va_list
 
@@ -63,4 +62,3 @@ BASE_EXPORT void StringAppendV(std::wstring* dst,
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_STRINGPRINTF_H_

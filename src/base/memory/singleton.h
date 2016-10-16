@@ -16,8 +16,7 @@
 // and ideally a leaf dependency. Singletons get problematic when they attempt
 // to do too much in their destructor or have circular dependencies.
 
-#ifndef BASE_MEMORY_SINGLETON_H_
-#define BASE_MEMORY_SINGLETON_H_
+#pragma once
 
 #include "base/at_exit.h"
 #include "base/atomicops.h"
@@ -281,4 +280,3 @@ subtle::AtomicWord Singleton<Type, Traits, DifferentiatingType>::instance_ = 0;
 
 }  // namespace base
 
-#endif  // BASE_MEMORY_SINGLETON_H_

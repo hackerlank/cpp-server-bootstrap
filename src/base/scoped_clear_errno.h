@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_SCOPED_CLEAR_ERRNO_H_
-#define BASE_SCOPED_CLEAR_ERRNO_H_
+#pragma once
 
 #include <errno.h>
 
@@ -31,4 +30,3 @@ class ScopedClearErrno {
 
 }  // namespace base
 
-#endif  // BASE_SCOPED_CLEAR_ERRNO_H_

@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef TESTING_PLATFORM_TEST_H_
-#define TESTING_PLATFORM_TEST_H_
+#pragma once
 
 #include <gtest/gtest.h>
 
@@ -33,4 +32,3 @@ class PlatformTest : public testing::Test {
 typedef testing::Test PlatformTest;
 #endif // GTEST_OS_MAC
 
-#endif // TESTING_PLATFORM_TEST_H_

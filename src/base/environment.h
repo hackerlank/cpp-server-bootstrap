@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_ENVIRONMENT_H_
-#define BASE_ENVIRONMENT_H_
+#pragma once
 
 #include <map>
 #include <memory>
@@ -87,4 +86,3 @@ BASE_EXPORT std::unique_ptr<char* []> AlterEnvironment(
 
 }  // namespace base
 
-#endif  // BASE_ENVIRONMENT_H_

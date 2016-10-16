@@ -2,8 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef BASE_STRINGS_UTF_STRING_CONVERSION_UTILS_H_
-#define BASE_STRINGS_UTF_STRING_CONVERSION_UTILS_H_
+#pragma once
 
 // This should only be used by the various UTF string conversion files.
 
@@ -96,4 +95,3 @@ void PrepareForUTF16Or32Output(const char* src, size_t src_len, STRING* output);
 
 }  // namespace base
 
-#endif  // BASE_STRINGS_UTF_STRING_CONVERSION_UTILS_H_

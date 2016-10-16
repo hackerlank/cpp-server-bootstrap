@@ -4,8 +4,7 @@
 //
 // This file defines utility functions for working with strings.
 
-#ifndef BASE_STRINGS_STRING_UTIL_H_
-#define BASE_STRINGS_STRING_UTIL_H_
+#pragma once
 
 #include <ctype.h>
 #include <stdarg.h>   // va_list
@@ -466,4 +465,3 @@ BASE_EXPORT string16 ReplaceStringPlaceholders(const string16& format_string,
 #error Define string operations appropriately for your platform
 #endif
 
-#endif  // BASE_STRINGS_STRING_UTIL_H_
