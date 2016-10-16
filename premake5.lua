@@ -37,6 +37,7 @@ workspace 'CppServerBootstrap'
             '_ALLOW_KEYWORD_MACROS',
             'NOMINMAX',
 			'NOGDI',
+			'GOOGLE_GLOG_DLL_DECL=',
         }
         includedirs 
         {
@@ -71,6 +72,8 @@ workspace 'CppServerBootstrap'
         {
             'src/base/**.h',
             'src/base/**.cc',
+			'src/base/**.cpp',
+			'src/base/**.c',
         }
 		removefiles
 		{
@@ -108,5 +111,7 @@ workspace 'CppServerBootstrap'
         links 
         {
             'Base',
+			'libglog',
+			'gmock',
         }
     
