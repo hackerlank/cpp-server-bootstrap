@@ -115,8 +115,14 @@ extern int snprintf(char *str, size_t size,
                                        const char *format, ...);
 extern int safe_vsnprintf(char *str, size_t size,
                           const char *format, va_list ap);
+
+#ifndef vsnprintf
 #define vsnprintf(str, size, format, ap)  safe_vsnprintf(str, size, format, ap)
+#endif
+
+#ifndef va_copy
 #define va_copy(dst, src)  (dst) = (src)
+#endif
 
 /* Windows doesn't support specifying the number of buckets as a
  * hash_map constructor arg, so we leave this blank.
