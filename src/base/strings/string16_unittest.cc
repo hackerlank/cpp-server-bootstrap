@@ -17,10 +17,10 @@ namespace base {
 TEST(String16Test, OutputStream) {
   // Basic stream test.
   {
-    std::wstringstream stream;
+    std::ostringstream stream;
     stream << "Empty '" << string16() << "' standard '"
            << string16(ASCIIToUTF16("Hello, world")) << "'";
-    EXPECT_EQ(L"Empty '' standard 'Hello, world'",
+    EXPECT_EQ("Empty '' standard 'Hello, world'",
                  stream.str());
   }
 
@@ -43,11 +43,11 @@ TEST(String16Test, OutputStream) {
     unterminated_surrogate.push_back(0xd800);
     unterminated_surrogate.push_back('s');
 
-    std::wstringstream stream;
+    std::ostringstream stream;
     stream << initial_surrogate << "," << final_surrogate << ","
            << surrogate_pair << "," << unterminated_surrogate;
 
-    EXPECT_EQ(L"\xef\xbf\xbd,\xef\xbf\xbd,\xf0\x90\x8c\x80z,\xef\xbf\xbds",
+    EXPECT_EQ("\xef\xbf\xbd,\xef\xbf\xbd,\xf0\x90\x8c\x80z,\xef\xbf\xbds",
                  stream.str());
   }
 }

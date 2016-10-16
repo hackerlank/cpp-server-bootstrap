@@ -133,12 +133,6 @@ struct string16_char_traits {
 
 typedef std::basic_string<char16, base::string16_char_traits> string16;
 
-BASE_EXPORT extern std::ostream& operator<<(std::ostream& out,
-                                            const string16& str);
-
-// This is required by googletest to print a readable output on test failures.
-BASE_EXPORT extern void PrintTo(const string16& str, std::ostream* out);
-
 }  // namespace base
 
 // The string class will be explicitly instantiated only once, in string16.cc.
@@ -199,4 +193,14 @@ struct hash<base::string16> {
 }  // namespace std
 
 #endif  // WCHAR_T_IS_UTF32
+
+namespace base {
+
+BASE_EXPORT extern std::ostream& operator<<(std::ostream& out,
+                                            const string16& str);
+
+// This is required by googletest to print a readable output on test failures.
+BASE_EXPORT extern void PrintTo(const string16& str, std::ostream* out);
+
+}
 
