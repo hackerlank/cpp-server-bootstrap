@@ -11,6 +11,7 @@
 #include <type_traits>
 
 #include <glog/logging.h>
+#include "base/macros.h"
 #include "base/numerics/safe_conversions_impl.h"
 
 namespace base {

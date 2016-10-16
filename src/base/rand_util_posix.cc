@@ -9,10 +9,9 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <unistd.h>
-
-#include "base/files/file_util.h"
+#include <glog/logging.h>
 #include "base/lazy_instance.h"
-#include "base/logging.h"
+
 
 namespace {
 
@@ -49,9 +48,15 @@ uint64_t RandUint64() {
 
 void RandBytes(void* output, size_t output_length) {
   const int urandom_fd = g_urandom_fd.Pointer()->fd();
-  const bool success =
-      ReadFromFD(urandom_fd, static_cast<char*>(output), output_length);
-  CHECK(success);
+  size_t total_read = 0;
+  while (total_read < output_length) {
+    ssize_t bytes_read =
+        read(urandom_fd, (char*)output + total_read, output_length - total_read);
+    if (bytes_read <= 0)
+      break;
+    total_read += bytes_read;
+  }
+  CHECK(total_read == output_length);
 }
 
 int GetUrandomFD(void) {
