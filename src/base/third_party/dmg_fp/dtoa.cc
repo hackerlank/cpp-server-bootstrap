@@ -2524,7 +2524,7 @@ strtod
 		else if (nd < 16)
 			z = 10*z + c - '0';
 	nd0 = nd;
-	bc.dp0 = bc.dp1 = s - s0;
+	bc.dp0 = bc.dp1 = int(s - s0);
 #ifdef USE_LOCALE
 	s1 = localeconv()->decimal_point;
 	if (c == *s1) {
@@ -2546,7 +2546,7 @@ strtod
 #endif
 	if (c == '.') {
 		c = *++s;
-		bc.dp1 = s - s0;
+		bc.dp1 = int(s - s0);
 		bc.dplen = bc.dp1 - bc.dp0;
 		if (!nd) {
 			for(; c == '0'; c = *++s)
